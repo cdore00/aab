@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type" />
+
+<title>Galerie d'art Anne-Alexandre Tardif</title>
+<meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+<link href="misc/favicon.ico" rel="icon" />
+<link href="misc/favicon.ico" rel="shortcut icon" />
+
+<link rel="stylesheet" type="text/css" href="misc/init.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="misc/photo.css" />
+
+<script type="text/javascript" src="misc/util.js"></script>
+<script type="text/javascript"> 
+<!--
+
+function testaudio(){
+var objMovie = document.getElementById('objMovie');
+var mpeg4, canPlay;
+
+initPage();
+
+   var canPlay = false;
+   if(objMovie.canPlayType && objMovie.canPlayType('video/mp4').replace(/no/, '')) {
+       canPlay = true;
+   }
+//alert(canPlay);
+
+if ( objMovie.canPlayType ) {
+    // Check for MPEG-4 support
+    mpeg4 = "" !== objMovie.canPlayType( 'video/mp4; codecs="mp4v.20.8"' );
+//										'video/mp4; codecs="avc1.42E01E, mp4a.40.2"';
+}
+//alert(mpeg4);
+
+if (canPlay && mpeg4){
+objMovie.controls = true;
+}else{
+objMovie.parentNode.removeChild(objMovie);
+}
+
+}
+
+
+// -->
+</script> 
+</head>
+
+<body onload="testaudio();">
+
+<div id="entete">
+<h1>Anne-Alexandre Tardif</h1>
+<button type="button" id="rightnav" title="Taille de police" onclick="changeTaille();"><img id="imgTaille" alt="Taille de police" height="20" width="45" src="misc/taille.png" /></button>
+</div>
+
+
+<div id="divmenu">
+<ul>
+	<li>
+	<a href="index.html">Accueil</a>
+	</li>
+	<li>
+	<a id="ancPhoto" href="galerie.html">Galerie</a>  
+	</li>
+	<li>
+	<a class="selOpt" href="#">Diaporama</a>
+	</li>
+</ul>
+</div>
+
+
+<div id="content">
+<h2>Diaporama</h2>
+</br>
+
+<div id="centrer">
+
+
+</br>
+
+    <!--<video src="misc/video_diapo.mp4" controls></video> // -->
+</div>
+</div>  <!--End content // -->
+
+<div id="piedPage">
+6 d&eacute;cembre 2014
+</div>
+
+
+ </body>	 
+ </html>

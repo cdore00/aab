@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="fr"/>
+<meta name="url" content="http://atelierauroresboreales.com"/>
+<meta name="identifier-URL" content="http://atelierauroresboreales.com"/>
+<meta name="subject" content="Art visuel"/>
+<meta name="owner" content="Atelier Aurores Boréales"/>
+<meta name="copyright" content="Atelier Aurores Boréales"/>
+<meta name='author' content="Anne-Alexandre Tardif"/>
+<meta name="distribution" content="Global"/>
+<meta name="robots" content="index,follow"/>
+<meta name="description" content="La galerie d'art Atelier Aurores Boréales présente des oeuvres d'art de Anne-Alexandre Tardif pour votre demeure, votre lieu de travail ou pour un cadeau à quelqu'un."/>
+<meta name="keywords" content="Galerie d'art Atelier Aurores Boréales, Anne-Alexandre Tardif, Anne-Alexandre, Anne-Alex T, Anne-Alex, peintre, art visuel, art abstrait, art lyrique, acrylique, toiles, peintures, tableaux, québec québec, quebec QC "/>
+<meta name="revisit-after" content="30 days"/>
+<meta name="rating" content="General"/>
+<meta name="coverage" content="Worldwide"/>
+<meta name="location" content="CA, QC, "/>
+<meta name="classification" content="art"/>
+<meta name="country" content="Canada"/>
+<meta name="category" content="Galerie d'art"/>
+<meta name="contactcity" content="Quebec"/>
+<meta name="contactprovince" content="Quebec"/>
+<meta name="contactcountry" content="Canada"/>
+<title>Atelier Aurores Bor&eacute;ales - art visuel abstrait lyrique</title>
+<meta name="viewport" content="minimum-scale=1.0, width=device-width, user-scalable=yes" />
+<link href="misc/favicon.ico" rel="icon" />
+<link href="misc/favicon.ico" rel="shortcut icon" />
+
+<link rel="stylesheet" type="text/css" href="misc/init.css" media="screen" />
+<link id="pagestyle" rel="stylesheet" type="text/css" href="misc/photo.css" />
+
+<script type="text/javascript" src="misc/util.js"></script>
+<script type="text/javascript"> 
+<!--
+var pic_A =  new Array();
+var img_A =  new Array();
+var picCur = 0;
+var timerHandle = 1;
+var opacity = 0;
+
+function startDiapo(){
+nextPic(1);
+loadImg();
+}
+
+
+if (document.images) {
+	//Créer vecteur d'images
+	for (i = 0; i < 18; i++) { 
+    img_A[i] = new Image();
+	}
+
+}else alert('Les images ne sont pas supportées');
+
+function loadImg(){
+	img_A[1].src = 'photos/Oiseau.jpg';
+	img_A[2].src = 'photos/Rejouissances.jpg';
+	img_A[3].src = 'photos/EntreChien.jpg';
+	img_A[4].src = 'photos/Orangeraie.jpg';
+	img_A[5].src = 'photos/Vogue.jpg';
+	img_A[6].src = 'photos/Tourbillon.jpg';
+	img_A[7].src = 'photos/Terrain.jpg';
+	img_A[8].src = 'photos/Eclat.jpg';
+	img_A[9].src = 'photos/Evasion.jpg';
+	img_A[10].src = 'photos/Galeres.jpg';
+	img_A[11].src = 'photos/Cardinal.jpg';
+	img_A[12].src = 'photos/Allegresse.jpg';
+	img_A[13].src = 'photos/Nocturne.jpg';
+	img_A[14].src = 'photos/Envol.jpg';
+	img_A[15].src = 'photos/Stalactites.jpg';
+	img_A[16].src = 'photos/Boulon.jpg';
+	img_A[17].src = 'photos/Herbes.jpg';
+	pic_A[1] = new Array(img_A[1].src, 'L&rsquo;Oiseau de Feu ', '(48&quot;x30&quot;)');
+	pic_A[2] = new Array(img_A[2].src, 'R&eacute;jouissances ', '(48&quot;x30&quot;)');
+	pic_A[3] = new Array(img_A[3].src, 'Entre Chien et Loup ', '(48&quot;x30&quot;)');
+	pic_A[4] = new Array(img_A[4].src, 'Orangeraie', '(48&quot;x30&quot;)');
+	pic_A[5] = new Array(img_A[5].src, 'Vogue ', '(48&quot;x30&quot;)');
+	pic_A[6] = new Array(img_A[6].src, 'Tourbillon D&rsquo;Automne ', '(45&quot;x24&quot;)');
+	pic_A[7] = new Array(img_A[7].src, 'Terrain de Golf ', '(45&quot;x24&quot;)');
+	pic_A[8] = new Array(img_A[8].src, 'Éclat de Vert ', '(45&quot;x24&quot;)');
+	pic_A[9] = new Array(img_A[9].src, 'Évasion ', '(45&quot;x24&quot;)');
+	pic_A[10] = new Array(img_A[10].src, 'Les Galères ', '(45&quot;x24&quot;)');
+	pic_A[11] = new Array(img_A[11].src, 'Cardinal', '(48&quot;x30&quot;)');
+	pic_A[12] = new Array(img_A[12].src, 'All&eacute;gresse ', '()');
+	pic_A[13] = new Array(img_A[13].src, 'Nocturne ', '()');
+	pic_A[14] = new Array(img_A[14].src, 'Envol ', '(48&quot;x30&quot;)');
+	pic_A[15] = new Array(img_A[15].src, 'Stalactites Stalagmites ', '(40&quot;x40&quot;)');
+	pic_A[16] = new Array(img_A[16].src, 'Le Boulon D&rsquo;or', '(38&quot;x40&quot;)');
+	pic_A[17] = new Array(img_A[17].src, 'Herbes folles', '(20&quot;x24&quot;)');
+}
+
+function fadeOutTolltip(tooltipID) {
+  //imageId = 'tooltip';
+  obj = document.getElementById(tooltipID);
+  setOpacity(obj, 100);
+  obj.style.visibility = 'visible';
+  fadeOut(tooltipID,100);
+}
+
+//The setOpacity function is passed an object and an opacity value. It then sets the opacity of the supplied object using four proprietary ways. It also prevents a flicker in Firefox caused when opacity is set to 100%, by setting the value to 99.999% instead.
+
+function setOpacity(obj, opacity) {
+  opacity = (opacity == 0)?0.009:opacity;
+  
+  // IE/Win
+  obj.style.filter = "alpha(opacity:"+opacity+")";
+  
+  // Safari<1.2, Konqueror
+  obj.style.KHTMLOpacity = opacity/100;
+  
+  // Older Mozilla and Firefox
+  obj.style.MozOpacity = opacity/100;
+  
+  // Safari 1.2, newer Firefox and Mozilla, CSS3
+  obj.style.opacity = opacity/100;
+}
+
+//The fadeOut function uses a Timeout to call itself every 100ms with an object Id and an opacity. The opacity is specified as a percentage and increased 10% at a time. The loop stops once the opacity reaches 100%:
+
+function fadeOut(objId,opacity) {
+  if (document.getElementById) {
+    obj = document.getElementById(objId);
+    if (opacity >= 0) {
+      setOpacity(obj, opacity);
+      opacity -= 10; 
+      timerHandle = setTimeout("fadeOut('"+objId+"',"+opacity+")", 100);
+	} else {
+	nextPic(1);
+	//obj.style.visibility = 'hidden';
+	//setOpacity(obj, 100);
+    }
+  }
+}
+
+function fadeIn(objId,opacity) {
+  if (document.getElementById) {
+    obj = document.getElementById(objId);
+    if (opacity <= 100) {
+      setOpacity(obj, opacity);
+      opacity += 10;
+      timerHandle = setTimeout("fadeIn('"+objId+"',"+opacity+")", 100);
+	} else {
+	//obj.style.visibility = 'hidden';
+	//setOpacity(obj, 100);
+	timerHandle = setTimeout("fadeOut('"+objId+"',"+opacity+")", 3000);
+	//alert(pic_A.length);
+    }
+  }
+}
+
+function nextPic(p_m){
+var imgDiapo = document.getElementById('imgDiapo');
+var photoDesc = document.getElementById('photoDesc');
+var dimension = document.getElementById('dimension');
+var image = new Image();
+
+picCur += p_m;
+if (picCur == pic_A.length)
+	picCur = 0;
+if (picCur == -1)
+	picCur = pic_A.length -1;
+
+image.src = pic_A[picCur][0];
+
+photoDesc.innerHTML = pic_A[picCur][1];
+dimension.innerHTML = pic_A[picCur][2];
+imgDiapo.src = pic_A[picCur][0];
+
+imgDiapo.style.height = 450;
+imgDiapo.style.width =  Math.round(450 / image.height * image.width);
+
+
+if (timerHandle){
+	//alert(timerHandle);
+	timerHandle = setTimeout("fadeIn('tooltip',0)", 100);
+	}
+}
+
+function stopGoDiapo(){
+var nextPrec = document.getElementById('nextPrec');
+var nextSuiv = document.getElementById('nextSuiv');
+
+if (timerHandle){
+	clearTimeout(timerHandle);
+	timerHandle = 0;
+	nextPrec.style.visibility="visible";
+	nextSuiv.style.visibility="visible";
+	}else{
+	nextPrec.style.visibility="hidden";
+	nextSuiv.style.visibility="hidden";
+	timerHandle = setTimeout("fadeOut('tooltip',"+opacity+")", 100);
+	}
+}
+
+function initPageAccueil(){
+initPage(0);
+picCur = pic_A.length - 1;
+	img_A[0].onload = startDiapo;
+	//Charger première image
+	img_A[0].src = 'photos/Pluie.jpg';
+	pic_A[0] = new Array(img_A[0].src, 'Pluie sur L&rsquo;Oc&eacute;an', '(48&quot;x30&quot;)');
+//timerHandle = setTimeout("fadeOutTolltip('tooltip');", 3000);
+}
+// -->
+</script> 
+</head>
+
+<body onload="initPageAccueil();">
+
+<div id="entete">
+<h1>Atelier Aurores Bor&eacute;ales</h1>
+<button type="button" id="rightnav" title="Taille de police" onclick="changeTaille();"><img id="imgTaille" alt="Taille de police" height="20" width="45" src="misc/taille.png" /></button>
+
+</div>
+
+<div id="divmenu">
+<ul>
+	<li>
+	<a href="index.html">Accueil</a>
+	</li>
+	<li>
+	<a href="galerie.html">Galerie</a>
+	</li>
+	<li>
+	<a class="selOpt" href="diapo.html">Diaporama</a>
+	</li>
+	<li>
+	<a href="joindre.html">Nous joindre</a>
+	</li>
+</ul>
+
+</div>
+
+<div id="content">
+<h2>Diaporama</h2>
+<h3>Anne-Alexandre Tardif - Art visuel - Art abstrait lyrique</h3>
+<div id="divDesc"><p id="photoDesc">Pluie sur L&rsquo;Oc&eacute;an</p>
+<div id="nextPrec"><button class="boutonNext" title="Pécédent" onclick="nextPic(-1); return false;"><</button></div>
+<div id="nextSuiv"><button class="boutonNext" title="Suivant" onclick="nextPic(1); return false;">></button></div>
+</div>
+
+<div id="tooltip" onclick="stopGoDiapo()">
+
+<div><img id="imgDiapo" src="misc/spin.gif" title="Cliquer pour arrêter et redémarrer le diaporama" alt="Diaporama"/></div>
+<p id="dimension" class="dimen">(48&quot;x30&quot;)</p>
+</div>
+
+</div>  <!--End content // -->
+
+
+<div id="piedPage">
+<div id="W3C-XHTML">
+<p>
+    <a onclick="window.open('http://validator.w3.org/check?uri=http://cdore.no-ip.biz/anne/joindre.html','new','');return false" href="http://validator.w3.org/check?uri=http://cdore.no-ip.biz/anne/joindre.html"><img
+      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+</p>
+</div>
+<div>
+<p id="copyright"><a href="mailto:anne.alext@gmail.com?Subject=Site%20Atelier Aurores Boréales.com">Tous droits r&eacute;serv&eacute;s: Atelier aurores bor&eacute;ales &copy; 2014</a></p></div>
+</div>
+
+ </body>	 
+ </html>
